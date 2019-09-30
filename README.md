@@ -37,7 +37,7 @@ do-what-it-says
 	
 	Demo:
 
-	![Concert-this demo](<iframe src="https://giphy.com/embed/XAwhs9UB5Py5nrVvL7" width="480" height="320" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/XAwhs9UB5Py5nrVvL7">via GIPHY</a></p>)
+	![Concert-this demo]("https://media.giphy.com/media/XAwhs9UB5Py5nrVvL7/200w_d.gif")
 
 * Step Two: node liri spotify-this-song ```<song name here>```.
 	
