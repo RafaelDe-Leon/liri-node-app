@@ -91,7 +91,7 @@ function getMyMovie(inputSearch) {
     .get(
       "http://www.omdbapi.com/?t=" +
         inputSearch +
-        "&y=&plot=short&apikey=trilogy"
+        "&y=&plot=short&apikey=" + keys.imdb.key
     )
     .then(function(response) {
       // console.log(response.data);
@@ -137,11 +137,13 @@ function getMyConcert() {
     console.log("Please enter an Artist/Band name");
   }
 
+
+  // keys are hidden in a file
   axios
     .get(
       "https://rest.bandsintown.com/artists/" +
         inputSearch +
-        "/events?app_id=codingbootcamp"
+        "/events?app_id=" + keys.band.key
     )
     .then(function(response) {
       //   console.log(response.data);

@@ -5,3 +5,10 @@ exports.spotify = {
   secret: process.env.SPOTIFY_SECRET
 };
 
+exports.band = {
+    key: process.env.BAND_ID
+}
+
+exports.imdb = {
+    key: process.env.IMDB_ID
+}
