@@ -24,6 +24,7 @@ do-what-it-says
 * [spotify](https://www.npmjs.com/package/node-spotify-api) - A simple to use API library for the Spotify REST API.
 * [request](https://www.npmjs.com/package/request) - Request is designed to be the simplest way possible to make http calls. It supports HTTPS and follows redirects by default.
 * [dotenv](https://www.npmjs.com/package/dotenv) - Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env.
+* [moment](https://www.npmjs.com/package/moment) - Moment is a useful tool to formatt dates given in data.
 
 ## How to Run LIRI-Bot
 
