@@ -132,6 +132,11 @@ function getMyMovie(inputSearch) {
 //concert function api
 
 function getMyConcert() {
+  // if inputSearch is left empty default movie will be "lord of the rings".
+  if (inputSearch === "") {
+    console.log("Please enter an Artist/Band name");
+  }
+
   axios
     .get(
       "https://rest.bandsintown.com/artists/" +
@@ -139,16 +144,33 @@ function getMyConcert() {
         "/events?app_id=codingbootcamp"
     )
     .then(function(response) {
-      console.log(response.data);
+      //   console.log(response.data);
+
+      var bandRespon = response.data;
+
+      //Moments formatter for date
+      var date = moment(dateEvent).format("MMM Do YYYY");
+
+      if (bandRespon < 1) {
+        console.log("No Upcoming show your Artist/Band, try another again");
+      } else {
+
+        // loop to go through all the response in bandsintown api
+        for (i = 0; i < bandRespon.length; i++) {
+          var venueNam = bandRespon[i].venue.name;
+          var venueLoc = bandRespon[i].venue.country;
+          var dateEvent = bandRespon[i].datetime;
+
+          console.log("\n");
+          console.log("Venue Name: " + venueNam);
+          console.log("Venue Location: " + venueLoc);
+          console.log("Venue Date: " + date);
+        }
+      }
     })
     .catch(function(err) {
       if (err) {
-        console.log("---------------Data---------------");
-        console.log(err.response);
-        console.log("---------------Status---------------");
-        console.log(err.response.status);
-        console.log("---------------Status---------------");
-        console.log(err.response.headers);
+        return console.log("Error occurred: " + err);
       } else if (err.request) {
         console.log(err.request);
       } else {
@@ -157,13 +179,10 @@ function getMyConcert() {
     });
 }
 
-
 function getWhatItSays() {
-    
-fs.readFile("random.txt", "utf8", function (error, data) {
-    
+  fs.readFile("random.txt", "utf8", function(error, data) {
     if (error) {
-        return console.log(error);
+      return console.log(error);
     }
 
     var dataArr = data.split(",");
@@ -171,9 +190,7 @@ fs.readFile("random.txt", "utf8", function (error, data) {
     getMySpotify(dataArr[1]);
 
     // console.log(dataArr);
-
-})
-
+  });
 }
 // var runThis = function(argOne, argTwo) {
 //     pick(argOne, argTwo)
