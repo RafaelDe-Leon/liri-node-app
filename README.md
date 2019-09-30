@@ -28,7 +28,16 @@ do-what-it-says
 
 ## How to Run LIRI-Bot
 
-* Step One: write node liri concert-this ```<name of band/artist>``` This will show your last 20 tweets and when they were created at in your terminal/bash window.
+* Step One: write node liri concert-this ```<name of band/artist>``` .
+	
+	This will show you a list of the following.
+	* Name of the venue
+	* Venue Location
+	* Date of the event
+	
+	Demo:
+
+	![Concert-this demo](./demo/movie-this-gif)
 
 * Step Two: node liri spotify-this-song ```<song name here>```.
 	
