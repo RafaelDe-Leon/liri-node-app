@@ -26,6 +26,8 @@ do-what-it-says
 * [dotenv](https://www.npmjs.com/package/dotenv) - Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env.
 * [moment](https://www.npmjs.com/package/moment) - Moment is a useful tool to formatt dates given in data.
 
+** install packages ** with npm install in the terminal 
+
 ## How to Run LIRI-Bot
 
 * Step One: write node liri concert-this ```<name of band/artist>``` .
