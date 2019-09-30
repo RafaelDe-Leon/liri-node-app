@@ -1,4 +1,4 @@
-# LIRI-Bot
+# LIRI-BOT (a Language Interpretation and Recognition Interface)
 LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data.
 
 ## LIRI uses the following commands:
@@ -49,6 +49,11 @@ do-what-it-says
 
 	If no song is provided then the program will default to
 	"The Sign".
+
+	Demo:
+
+	![spotify-this-song demo](https://media.giphy.com/media/TjG10kvUcICEKC5kbO/source.gif)
+
 * Step Three: node liri.js movie-this ```<movie name here>```.
 	
 	This will output the following information to your terminal/bash window:
@@ -62,9 +67,17 @@ do-what-it-says
 	* Rotten Tomatoes Rating.
 	* Rotten Tomatoes URL.
 	
-	If the user doesn't type a movie in, the program will output data for the movie 'Lord of The Rings'
+	If the user doesn't type a movie in, the program will output data for the movie 'Lord of The Rings'.
+
+	Demo:
+
+	![movie-this demo](https://media.giphy.com/media/JRmocXZedNmEwHSvxo/source.gif)
 
 * Step Four: node liri.js do-what-it-says
 
 	This will output the command placed in random.txt file
+
+	Demo:
+
+	![movie-this demo](https://media.giphy.com/media/UVAQmMXBpjIjQoIKwY/source.gif)
 
