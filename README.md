@@ -28,6 +28,18 @@ do-what-it-says
 
 **install packages** -  with npm install in the terminal 
 
+**create** - your own .env file with
+
+* SPOTIFY_ID=?????????? **insert your own spotify key here** 
+* SPOTIFY_SECRET=??????? **insert your own secret id here**
+
+* Band api key needed in .env 
+	* BAND_ID=?????? **insert your own** 
+
+IMDB key needed in .env
+
+IMDB_ID=???? **insert your own key here**
+
 ## How to Run LIRI-Bot
 
 * Step One: write node liri concert-this ```<name of band/artist>``` .
